@@ -1,9 +1,14 @@
-html, body {
-    height:100%;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
-    color: #4D4D4D;
+
     background-color: rgb(234,229,229);
     /*background: url('../img/fabric.png');*/
 }
@@ -13,22 +18,29 @@ body {
     padding-bottom: 100px;
 }
 
-div.row.content {
-    padding-top: 100px;
+
+.navbar-default {
+    margin-top: 30px;
+    background-color: rgb(234,229,229);
 }
 
-nav {
-    height: 100px;
-    font-weight: bold;
-    font-family: 'Noticia Text', serif;
+
+div.row.content {
+    padding-top: 60px;
 }
+
 
 span#author {
+    font-family: 'Noticia Text', serif;
+    font-weight: bolder;
+    color: #4D4D4D;
     font-size: 3em;
 }
 
 span#subheading {
-    font-size: 1.2em;
+    font-family: 'Noticia Text', serif;
+    color: #4D4D4D;
+    font-size: 1.8em;
     line-height: 150%;
 }
 
@@ -41,13 +53,14 @@ a.navbar-brand {
     /*background-color: aqua;*/
 }
 
-
-.navbar-nav>li>a {
+#navbar > ul > li > a {
     color: #8B8B8B;
     /*background-color: aqua;*/
 }
 
-.navbar-nav>li>a:hover {
+
+
+#navbar > ul > li > a:hover {
     background-color: rgb(234,229,229);
     color: #365D8A;
 }
@@ -80,15 +93,11 @@ img {
     display:block;
 }
 
-div.container-fluid {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 
 
 
 span#hello {
+    color: #4D4D4D;
     font-family: 'Noticia Text', serif;
     font-size: 6em;
     font-weight: bolder;
@@ -97,6 +106,7 @@ span#hello {
 }
 
 span#more {
+    color: #4D4D4D;
     font-family: 'Noticia Text', serif;
     font-size: 3em;
     line-height: 50%;
@@ -104,8 +114,16 @@ span#more {
 }
 
 .about p {
+    color: #4D4D4D;
     text-indent: 20px;
     text-align: justify;
+}
+
+
+a#specialist {
+    font-style: italic;
+    text-decoration: blink;
+    color: #365D8A
 }
 
 
@@ -135,25 +153,9 @@ span#more {
 
 
 
-@media only screen and (max-width: 1200px) {
-
-    span#author {
-        font-size: 2.3em;
-    }
-    img {
-        width: 300px;
-        height: 300px;
-    }
-
-}
 
 
-@media only screen and (orientation: portrait) {
-    .btn-toolbar {
-        background-color: aqua;
-        text-align: center;
-    }
-}
+
 
 
 .footer {
@@ -198,6 +200,73 @@ button.myskills {
 button.myskills:hover {
     background-color: #4D9D21;
 }
+
+
+
+
+/* smallest screens */
+@media only screen and (max-width: 480px) {
+    span#author {
+        font-size: 1.2em;
+    }
+    span#subheading {
+        font-size: 0.6em;
+    }
+    span#hello {
+        font-size: 4em;
+    }
+
+    span#more {
+        font-size: 1.5em;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    .btn-circle {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* tablet & big smartphone */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    span#author {
+        font-size: 1.8em;
+        /*background-color: aqua;*/
+    }
+    span#subheading {
+        font-size: 0.9em;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    .btn-circle {
+        width: 90px;
+        height: 90px;
+    }
+    a.circle-link {
+        font-size: 12px;
+    }
+}
+
+
+/* tablet & big smartphone */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    span#author {
+        font-size: 2.0em;
+        /*background-color: pink;*/
+    }
+    span#subheading {
+        font-size: 1em;
+    }
+}
+
+
+
+
 
 
 /* Lighter pastel */

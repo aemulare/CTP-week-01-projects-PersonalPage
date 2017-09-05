@@ -30,32 +30,31 @@
 
 <body>
 	<div class="container main">
-		<div class="row navigation">
-			<nav class="navbar">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">
-							<span id="author">Maria Romanova</span>
-							<!--<br>-->
-							<!--<span id="subheading">Computer Science major</span>-->
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Resume</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><span id="author">Maria Romanova</span>
+						<!--<br><span id="subheading">Computer Science major</span>-->
+					</a>
+
 				</div>
-			</nav>
-		</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Resume</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav>
 		<div class="row content">
 			<div class="col-sm-12 center-block">
 				<div class="col-sm-12 col-md-5 col-lg-5">
@@ -82,9 +81,10 @@
 					</div>
 					<div class="col-sm-12 col-md-11 col-lg-11 about">
 						<p>I'm from Far East of Russia, a region bordering China.
-							In Russia, I had earned a <a href="https://en.wikipedia.org/wiki/Specialist_degree">specialist degree</a>
-							from the Pacific National University, where I studied mechanical engineering, product certification systems,
-							and quality assurance. Before moving to the United States, I worked on various jobs in Khabarovsk and Moscow.
+							In Russia, I had earned a <a href="https://en.wikipedia.org/wiki/Specialist_degree" id="specialist" target="_blank">
+								Specialist degree</a> from the Pacific National University, Khabarovsk, where I studied mechanical engineering,
+							product certification systems, and quality assurance. Before moving to the United States,
+							I worked on various jobs in Khabarovsk and Moscow.
 							While living in NYC, I switched my focus to Computer Science and, currently,
 							I'm working on my BS degree in CUNY College of Staten Island.
 						</p>
@@ -93,6 +93,7 @@
 			</div>
 		</div><!--end row content-->
 	</div><!--end container-->
+
 	<div class="row footer">
 		<div class="phone-contact col-sm-3">
 			<p>Call</p>
