@@ -153,15 +153,23 @@ a#specialist {
 
 
 
+th, td {
+    padding: 0 8px;
+    vertical-align: middle;
+    /*border: 1px solid black;*/
+    /*border-collapse: collapse;*/
+}
 
+table {
 
+}
 
 
 
 .footer {
     background-color: #C3425D;
     color: white;
-    padding: 20px 50px 0 50px;
+    padding: 20px 50px 20px 50px;
     position: static;
     bottom: 0;
 }
@@ -265,8 +273,18 @@ button.myskills:hover {
 }
 
 
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #68B73E;
+    text-align: center;
+    padding: 4% 0;
+}
 
-
+i {
+    padding: 16% 0 0 0;
+}
 
 
 /* Lighter pastel */
