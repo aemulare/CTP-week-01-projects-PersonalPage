@@ -20,7 +20,7 @@ div.row.content {
 nav {
     height: 100px;
     font-weight: bold;
-    font-family: serif, Helvetica;
+    font-family: 'Noticia Text', serif;
 }
 
 span#author {
@@ -36,12 +36,13 @@ span#subheading {
 
 a.navbar-brand {
     color: #4D4D4D;
+    /*padding-right: 20px;*/
     /*height: 60px;*/
     /*background-color: aqua;*/
 }
 
 
-.navbar-nav>li>a{
+.navbar-nav>li>a {
     color: #8B8B8B;
     /*background-color: aqua;*/
 }
@@ -88,7 +89,7 @@ div.container-fluid {
 
 
 span#hello {
-    font-family: serif, Helvetica;
+    font-family: 'Noticia Text', serif;
     font-size: 6em;
     font-weight: bolder;
 
@@ -96,7 +97,7 @@ span#hello {
 }
 
 span#more {
-    font-family: serif, Helvetica;
+    font-family: 'Noticia Text', serif;
     font-size: 3em;
     line-height: 50%;
     /*background-color: pink;*/
