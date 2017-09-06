@@ -180,6 +180,19 @@ a.circle-link {
     text-transform: uppercase;
 }
 
+
+
+a#email {
+    color: white;
+}
+
+
+a#phone-number {
+    text-decoration: none;
+    color: white;
+}
+
+
 button.myresume {
     background-color: #C3425D;
     border-color: #C3425D;
