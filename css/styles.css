@@ -193,6 +193,12 @@ a#phone-number {
 }
 
 
+a#linkedin,
+a#github {
+    color: white;
+}
+
+
 button.myresume {
     background-color: #C3425D;
     border-color: #C3425D;
